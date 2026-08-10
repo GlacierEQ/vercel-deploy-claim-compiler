@@ -1,0 +1,27 @@
+{
+  "schema": "glaciereq.canonical-position-proof.v1",
+  "repository": "GlacierEQ/vercel-deploy-claim-compiler",
+  "source_sha": "5cdfaba8db55ae2e3bf66e5ebac38159f61542ea",
+  "workflow": {
+    "name": "tests",
+    "run_id": 31399843701,
+    "conclusion": "success",
+    "jobs": ["py", "node"]
+  },
+  "verified_invariants": [
+    "unrelated deploy receipts cannot upgrade tested evidence",
+    "unrelated uptime receipts cannot upgrade deployed evidence",
+    "failed receipts do not support stronger claims",
+    "deploy and uptime receipts require explicit subject_ref linkage",
+    "duplicate or unknown receipt identities fail closed",
+    "receipt ordering does not change graph or report identity",
+    "complete test-to-deploy-to-uptime chains support production-verified ceiling"
+  ],
+  "claim_ceiling": "independent_reference_evidence_graph_claim_compilation",
+  "nonclaims": [
+    "no external deployment execution",
+    "no external Vercel state verification",
+    "no production deployment claim",
+    "no Vercel affiliation or adoption"
+  ]
+}
