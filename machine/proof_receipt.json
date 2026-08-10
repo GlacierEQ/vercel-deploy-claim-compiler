@@ -1,0 +1,31 @@
+{
+  "schema": "glaciereq.proof-receipt.v1",
+  "repository": "GlacierEQ/vercel-deploy-claim-compiler",
+  "source_sha": "ccb645713524c212124d8b510726b137486b47f4987a227fc99657190ac8741e",
+  "proof_id": "elite-vercel-deploy-claim-compiler-1786335149",
+  "environment": {
+    "python": "/Users/kcbflux/job-app/excellence/.venv-elite/bin/python",
+    "PYTHONPATH": "/Users/kcbflux/job-app/repos/vercel-deploy-claim-compiler:/Users/kcbflux/job-app/repos/vercel-deploy-claim-compiler/src",
+    "entry": "unittest"
+  },
+  "tests": [
+    "/Users/kcbflux/job-app/excellence/.venv-elite/bin/python -m unittest discover -s tests -v (x2)"
+  ],
+  "adversarial_tests": [
+    "tests/test_adversarial.py"
+  ],
+  "runtime": {
+    "operate": "scripts/operate.py (x2)",
+    "dual_run_ok": true,
+    "proof_dual_run_ok": true
+  },
+  "result": "PASS",
+  "limitations": [
+    "not production deployed",
+    "reference implementation only"
+  ],
+  "timestamp": "2026-08-10T04:12Z",
+  "artifact_hashes": {
+    "operability_receipt": "55c3792ecef007b7c99a9186e40ab2482bcfcb32862644e51e95cba9f85a5b97"
+  }
+}

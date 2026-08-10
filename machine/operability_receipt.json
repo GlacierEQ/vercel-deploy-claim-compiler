@@ -1,0 +1,26 @@
+{
+  "schema": "glaciereq.operability-receipt.v1",
+  "repository": "GlacierEQ/vercel-deploy-claim-compiler",
+  "at": "2026-08-10T04:12Z",
+  "source_sha": "ccb645713524c212124d8b510726b137486b47f4987a227fc99657190ac8741e",
+  "entry": "scripts/operate.py",
+  "primary_output": {
+    "module": "claim_compiler",
+    "ok": true,
+    "repository": "GlacierEQ/vercel-deploy-claim-compiler",
+    "smoke": {
+      "args": [
+        "[Claim(text='sample_text', strength=<Cla"
+      ],
+      "content_checked": true,
+      "invoked": true,
+      "kind": "class",
+      "method": "compile",
+      "module_local": true,
+      "name": "DeployClaimCompiler",
+      "result": "CompileResult(allowed=(Claim(text='sample_text', strength=<ClaimStrength.MARKETING: 'MARKETING'>),), blocked=(), max_supported_strength=<ClaimStrength.MARKETING: 'MARKETING'>, report_fingerprint='f1738d20962f754c3290c0e19d29541e0809cae4708b968cd08af2417424f360')"
+    }
+  },
+  "dual_run_ok": true,
+  "result": "PASS"
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "glaciereq.promotion-authority-grant.v1",
+  "repository": "GlacierEQ/vercel-deploy-claim-compiler",
+  "source_sha": "ccb645713524c212124d8b510726b137486b47f4987a227fc99657190ac8741e",
+  "proof_receipt_digest": "e276d63ad04d072cff9eafd14fd56ac9b109cd8557ed1d9c844993177fdee00b",
+  "not_after": 1788927149.234226,
+  "mac": "f9e67cddb01c1af18b763e3569ab1bebdcb3f94701b3d76249c76042ed852d86",
+  "issuer": "local_operator_promotion_authority",
+  "verified": true,
+  "secret_ref": "src/promotion_authority.py::LOCAL_OPERATOR_SECRET"
+}
