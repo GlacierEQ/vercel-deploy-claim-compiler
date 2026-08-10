@@ -1,1 +1,19 @@
-{"capabilities": ["hyper-scaling"]}
+{
+  "schema": "glaciereq.capability-surface.v1",
+  "repository": "GlacierEQ/vercel-deploy-claim-compiler",
+  "capabilities": [
+    "typed_claim_strength_ceiling",
+    "coherent_test_deploy_uptime_chain",
+    "receipt_linkage_validation",
+    "failed_or_unrelated_receipt_rejection",
+    "order_independent_evidence_graph_fingerprint",
+    "supporting_receipt_chain_fingerprint",
+    "python_node_claim_compiler_parity",
+    "deterministic_claim_compile_report"
+  ],
+  "truth_boundary": "The compiler reasons only over supplied receipts and their explicit links. It does not execute deployments, verify external Vercel state, prove application correctness beyond those receipts, or establish Vercel affiliation/adoption.",
+  "relationship_boundary": {
+    "GlacierEQ/vercel-preview-truth-gate": {"integration_exercised": false},
+    "GlacierEQ/vercel-edge-agent-cap-token": {"integration_exercised": false}
+  }
+}
