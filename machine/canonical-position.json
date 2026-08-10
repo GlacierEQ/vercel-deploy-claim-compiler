@@ -1,0 +1,39 @@
+{
+  "schema": "glaciereq.canonical-position.v1",
+  "repository": "GlacierEQ/vercel-deploy-claim-compiler",
+  "role": "CANONICAL_SPECIALIST",
+  "owns": "evidence_graph_bound_deploy_claim_compilation",
+  "mechanism": {
+    "tested": "successful unit/e2e receipt for exact artifact ref",
+    "deployed": "successful deploy receipt whose subject_ref points to that tested artifact ref",
+    "production_verified": "successful uptime receipt whose subject_ref points to that deployment ref",
+    "composition": "one coherent successful receipt chain only",
+    "receipt_identity": "deterministic evidence graph and supporting-chain fingerprints"
+  },
+  "does_not_own": [
+    "external deployment execution",
+    "external Vercel state verification",
+    "application correctness beyond supplied receipts",
+    "preview-environment truth gating",
+    "edge-agent capability authorization",
+    "Vercel affiliation, adoption, or production deployment"
+  ],
+  "relationships": [
+    {
+      "repository": "GlacierEQ/vercel-preview-truth-gate",
+      "relationship": "complementary preview-truth specialist",
+      "integration_exercised": false
+    },
+    {
+      "repository": "GlacierEQ/vercel-edge-agent-cap-token",
+      "relationship": "complementary capability-authorization specialist",
+      "integration_exercised": false
+    }
+  ],
+  "proof": {
+    "source_sha": "5cdfaba8db55ae2e3bf66e5ebac38159f61542ea",
+    "workflow_run_id": 31399843701,
+    "jobs": ["py", "node"],
+    "result": "PASS"
+  }
+}
