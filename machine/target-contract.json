@@ -5,18 +5,38 @@
     "family": "elite-estate"
   },
   "current": {
-    "state": "PROMOTED",
+    "state": "EVOLVING",
     "implemented": true,
     "tested": true,
-    "deployed": false
+    "deployed": false,
+    "canonical_position_resolved": true,
+    "exact_head_proof": {
+      "source_sha": "5cdfaba8db55ae2e3bf66e5ebac38159f61542ea",
+      "workflow_run_id": 31399843701,
+      "jobs": ["py", "node"],
+      "result": "PASS"
+    }
+  },
+  "canonical_role": "evidence_graph_bound_deploy_claim_compilation",
+  "promotion": {
+    "canonical_gate": "PASS",
+    "next_state": "EVOLVING",
+    "next_cursor": "compose_verified_preview_truth_receipts_without_weakening_graph_binding"
   },
   "nonclaims": [
     "no employer affiliation",
-    "no production deployment without receipt"
+    "no production deployment without external receipt",
+    "no external Vercel state verification",
+    "no proof of application correctness beyond supplied evidence",
+    "no sibling integration without executable composition proof"
   ],
   "donor_plan": {
-    "mode": "none",
-    "donors": []
+    "mode": "preserve-separate-specialists",
+    "donors": [],
+    "siblings": [
+      "GlacierEQ/vercel-preview-truth-gate",
+      "GlacierEQ/vercel-edge-agent-cap-token"
+    ]
   },
-  "frozen_at": "2026-08-10T04:12Z"
+  "frozen_at": "2026-08-10T14:46:00Z"
 }
