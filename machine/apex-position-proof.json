@@ -1,5 +1,5 @@
 {
-  "schema": "glaciereq.canonical-position-proof.v1",
+  "schema": "glaciereq.apex-position-proof.v1",
   "repository": "GlacierEQ/vercel-deploy-claim-compiler",
   "source_sha": "5cdfaba8db55ae2e3bf66e5ebac38159f61542ea",
   "workflow": {

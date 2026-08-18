@@ -9,7 +9,7 @@
     "implemented": true,
     "tested": true,
     "deployed": false,
-    "canonical_position_resolved": true,
+    "apex_position_resolved": true,
     "exact_head_proof": {
       "source_sha": "5cdfaba8db55ae2e3bf66e5ebac38159f61542ea",
       "workflow_run_id": 31399843701,
@@ -17,9 +17,9 @@
       "result": "PASS"
     }
   },
-  "canonical_role": "evidence_graph_bound_deploy_claim_compilation",
+  "apex_role": "evidence_graph_bound_deploy_claim_compilation",
   "promotion": {
-    "canonical_gate": "PASS",
+    "apex_gate": "PASS",
     "next_state": "EVOLVING",
     "next_cursor": "compose_verified_preview_truth_receipts_without_weakening_graph_binding"
   },
